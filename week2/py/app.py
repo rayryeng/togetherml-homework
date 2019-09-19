@@ -84,8 +84,9 @@ async def classify_url(request):
     img = open_image(BytesIO(bytes))
     preds, _, _ = pred_model.predict(img)
 
+    # Also must cast to `str` as `preds` is a Category object custom to fastai
     return JSONResponse({
-        "predictions": preds,
+        "predictions": str(preds),
     })
 
 ### EDIT CODE ABOVE ###
