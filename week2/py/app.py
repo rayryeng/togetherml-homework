@@ -70,6 +70,10 @@ async def answers_to_hw(request):
 
 @app.route("/api/class_list", methods=["GET"])
 async def class_list(request):
+    # Changed by Ray
+    # When using an ImageDataBunch to train with a cnn_learner from fastai,
+    # the directories of images corresponding to the class labels are
+    # lexicographically sorted starting from the beginning to end of the alphabet
     return JSONResponse(['beverly-crusher', 'data', 'deanna-troi', 'geordi-la-forge',
                           'jean-luc-picard', 'katherine-pulaski', 'tasha-yar',
                           'wesley-crusher', 'will-riker', 'worf'])
