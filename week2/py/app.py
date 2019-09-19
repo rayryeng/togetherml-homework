@@ -56,7 +56,7 @@ in the dataset would need to be continuous-valued as well.
 """
 
 ## Replace none with your model
-pred_model = load_learner('../models', file='tng_model.pkl')
+pred_model = load_learner('./models', file='tng_model.pkl')
 
 # Added by Ray
 async def get_bytes(url):
