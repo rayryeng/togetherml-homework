@@ -16,7 +16,7 @@ function App() {
   const [currentInput, setCurrentInput] = useState('');
   const [predictions, setPredictions] = useState('');
   const [classMessage, setClassMessage] = useState('Getting a list of classes...');
-  const [serverBaseURL, setServerBaseURL] = useState('https://truck-classifier.herokuapp.com')
+  const [serverBaseURL, setServerBaseURL] = useState('https://tng-character.herokuapp.com')
 
 
   memoizedClassList(serverBaseURL, setClassMessage);
